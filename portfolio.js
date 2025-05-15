@@ -21,3 +21,8 @@ iconBox.addEventListener("click", function () {
   iconBox.innerHTML = isIcon1 ? moon : sun; // Toggle icon
   isIcon1 = !isIcon1; // Update state
 });
+const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
